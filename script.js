@@ -62,3 +62,14 @@ function colorCodeCopier() {
 }
 
 hexCodeArea.addEventListener("click", colorCodeCopier);
+
+//another approach suggested from one of my linkedin connections(Sultan Mohammad Arif)
+
+const setBg = () => {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+  color.innerHTML = "#" + randomColor;
+}
+
+
+
